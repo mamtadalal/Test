@@ -1,5 +1,6 @@
 var App = angular.module('Test', []);
 App.controller('MainCtrl', function ($scope, $http) {
+  console.log("here");
   $scope.people = [
     {
       name: 'John Doe',
@@ -18,6 +19,7 @@ App.controller('MainCtrl', function ($scope, $http) {
     }
   ];
   $scope.addPerson = function () {
+    console.log("here 2");
     $scope.people.push({
         name: $scope.person_name,
         city: $scope.person_city,
