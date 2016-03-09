@@ -1,1 +1,31 @@
-abc
+<!DOCTYPE html>
+<html lang="en" ng-app="Test">
+<head>
+    <meta charset="utf-8">
+    <title>Learning AngularJS</title>
+</head>
+	<script src="controller.js"></script>
+<body ng-controller="MainCtrl">
+    <h1>The People App</h1>
+    <h4>View People</h4>
+    <ul>
+        <li ng-repeat="person in people">
+            {{ person.name }} from {{ person.city }}, {{ person.state }}
+        </li>
+    </ul>
+
+    <h4>Add People</h4>
+    Enter the person's name: <input type="text" ng-model="person_name" />
+    <br />
+    <br />
+    Enter the person's city: <input type="text" ng-model="person_city" />
+    <br />
+    <br />
+    Enter the person's state: <input type="text" ng-model="person_state" />
+    <br />
+    <br />
+    <button ng-click="addPerson()">Add the Person!</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</body>
+</html>
