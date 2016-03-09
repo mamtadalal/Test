@@ -1,5 +1,5 @@
 var App = angular.module('Test', []);
-App.controller('MainCtrl', function ($scope, $http) {
+App.controller('MainCtrl', function ($scope) {
   console.log("here");
   $scope.people = [
     {
