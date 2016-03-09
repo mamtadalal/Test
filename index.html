@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" ng-app ng-controller="MainCtrl">
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
     <meta charset="utf-8">
     <title>test</title>
 </head>
-	<script src="http://mamtadalal.github.io/Test/controller.js"></script>
-	
-	
-<!-- <body ng-controller="MainCtrl">
-    <h1>App</h1>
-    <h4>View People</h4>
-    <ul>
-        <li ng-repeat="person in people">
-            {{ person.name }} from {{ person.city }}, {{ person.state }}
-        </li>
-    </ul>
-
-    <h4>Add People</h4>
-    Enter the person's name: <input type="text" ng-model="person_name" />
-    <br />
-    <br />
-    Enter the person's city: <input type="text" ng-model="person_city" />
-    <br />
-    <br />
-    Enter the person's state: <input type="text" ng-model="person_state" />
-    <br />
-    <br />
-    <button ng-click="addPerson()">Add the Person!</button>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-</body>
-</html> -->
-
+<!--	<script src="http://mamtadalal.github.io/Test/controller.js"></script> -->
+<body>
+<div ng-app="Demo" ng-controller="myCtrl">
 <body> <h1>App</h1>
     <h4>View People</h4>
     <ul>
@@ -51,13 +26,9 @@
     <br />
     <br />
     <button ng-click="addPerson()">Add the Person!</button>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-</body>
-<script> 
-
-function MainCtrl ($scope) {
-  $scope.people = [
+<script>
+angular.module("Demo", []).controller("myCtrl", function($scope) {
+    $scope.people = [
     {
       name: 'John Doe',
       city: 'New York City',
@@ -84,6 +55,33 @@ function MainCtrl ($scope) {
     $scope.person_city = '';
     $scope.person_state = '';
   }
-}
- </script> 
- </html>
+});
+</script>
+</body>
+</html>
+	
+<!-- <body ng-controller="MainCtrl">
+    <h1>App</h1>
+    <h4>View People</h4>
+    <ul>
+        <li ng-repeat="person in people">
+            {{ person.name }} from {{ person.city }}, {{ person.state }}
+        </li>
+    </ul>
+
+    <h4>Add People</h4>
+    Enter the person's name: <input type="text" ng-model="person_name" />
+    <br />
+    <br />
+    Enter the person's city: <input type="text" ng-model="person_city" />
+    <br />
+    <br />
+    Enter the person's state: <input type="text" ng-model="person_state" />
+    <br />
+    <br />
+    <button ng-click="addPerson()">Add the Person!</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</body>
+</html> -->
+
