@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>test</title>
 </head>
-<!--	<script src="http://mamtadalal.github.io/Test/controller.js"></script> -->
+	<script src="http://mamtadalal.github.io/Test/controller.js"></script> 
 <body>
 <div ng-app="Demo" ng-controller="myCtrl">
 <body> <h1>App</h1>
@@ -26,37 +26,9 @@
     <br />
     <br />
     <button ng-click="addPerson()">Add the Person!</button>
-<script>
-angular.module("Demo", []).controller("myCtrl", function($scope) {
-    $scope.people = [
-    {
-      name: 'John Doe',
-      city: 'New York City',
-      state: 'New York'
-    },
-    {
-      name: 'John Smith',
-      city: 'Oklahoma City',
-      state: 'Oklahoma'
-    },
-    {
-      name: 'Henry Black',
-      city: 'Topeka',
-      state: 'Kansas'
-    }
-  ];
-  $scope.addPerson = function () {
-    $scope.people.push({
-        name: $scope.person_name,
-        city: $scope.person_city,
-        state: $scope.person_state
-    });
-    $scope.person_name = '';
-    $scope.person_city = '';
-    $scope.person_state = '';
-  }
-});
-</script>
+<!-- <script>
+
+</script> -->
 </body>
 </html>
 	
