@@ -1,4 +1,6 @@
+console.log("1");
 var App = angular.module('Test', []);
+console.log("2");
 App.controller('MainCtrl', function ($scope) {
   console.log("here");
   $scope.people = [
